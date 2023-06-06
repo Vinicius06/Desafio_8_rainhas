@@ -110,7 +110,7 @@ TEST_CASE("Setimo Teste de solução válida das 8 damas") {
 
 TEST_CASE("Oitavo Teste de solução válida das 8 damas") {
     std::vector<int> tabuleiro = {
-        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 1, 0, 0, 0, 0,
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
