@@ -275,7 +275,7 @@ TEST_CASE("Sexto Teste de validação do tabuleiro inválido: solução inválid
 
 TEST_CASE("Setimo Teste de validação do tabuleiro inválido: solução inválida") {
     std::vector<int> tabuleiro = {
-        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 0, 1, 0, 0, 0, 
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
@@ -293,7 +293,7 @@ TEST_CASE("Oitavo Teste de validação do tabuleiro inválido: solução inváli
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0, 
         0, 0, 0, 0, 0, 0, 0, 1,
-        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
@@ -309,7 +309,7 @@ TEST_CASE("Nono Teste de validação do tabuleiro inválido: solução inválida
         0, 0, 0, 0, 1, 0, 0, 0, 
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
-        0, 0, 1, 0, 0, 0, 0, 0,
+        1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
         1, 0, 0, 0, 0, 0, 0, 0
@@ -325,7 +325,7 @@ TEST_CASE("Decimo Teste de validação do tabuleiro inválido: solução inváli
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
         0, 1, 0, 0, 0, 0, 0, 0,
         1, 0, 0, 0, 0, 0, 0, 0
     };
@@ -337,9 +337,39 @@ TEST_CASE("Decimo primeiro Teste de validação do tabuleiro inválido: soluçã
     std::vector<int> tabuleiro = {
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 0, 1, 0, 0, 0, 
-        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        1, 0, 0, 0, 0, 0, 0, 0
+    };
+
+    REQUIRE(checar_solucao(tabuleiro) == 0);
+}
+
+TEST_CASE("Decimo segundo Teste de validação do tabuleiro inválido: solução inválida") {
+    std::vector<int> tabuleiro = {
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        1, 0, 0, 0, 0, 0, 0, 0
+    };
+
+    REQUIRE(checar_solucao(tabuleiro) == 0);
+}
+
+TEST_CASE("Decimo terceiro Teste de validação do tabuleiro inválido: solução inválida") {
+    std::vector<int> tabuleiro = {
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
         1, 0, 0, 0, 0, 0, 0, 0
