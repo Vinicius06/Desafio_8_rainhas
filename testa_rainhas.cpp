@@ -138,6 +138,36 @@ TEST_CASE("Nono Teste de solução válida das 8 damas") {
     REQUIRE(checar_solucao(tabuleiro) == 1);
 }
 
+TEST_CASE("Decimo Teste de solução válida das 8 damas") {
+    std::vector<int> tabuleiro = {
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 1, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0
+    };
+
+    REQUIRE(checar_solucao(tabuleiro) == 1);
+}
+
+TEST_CASE("Decimo primeiro Teste de solução válida das 8 damas") {
+    std::vector<int> tabuleiro = {
+        0, 0, 0, 1, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0
+    };
+
+    REQUIRE(checar_solucao(tabuleiro) == 1);
+}
+
 TEST_CASE("Teste de validação do tabuleiro inválido: solução inválida") {
     std::vector<int> tabuleiro = {
         1, 0, 0, 0, 0, 0, 0, 0,
