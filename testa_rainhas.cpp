@@ -1,3 +1,4 @@
+// Copyright[2023] <Vinicius de Camargo Bandeira>
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include <vector>

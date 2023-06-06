@@ -1,3 +1,4 @@
+// Copyright[2023] <Vinicius de Camargo Bandeira>
 #ifndef RAINHAS_HPP
 #define RAINHAS_HPP
 

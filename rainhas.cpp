@@ -1,3 +1,4 @@
+// Copyright[2023] <Vinicius de Camargo Bandeira>
 #include <vector>
 #include "rainhas.hpp"
 #include <algorithm>
