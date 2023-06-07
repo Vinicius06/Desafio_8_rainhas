@@ -1,5 +1,5 @@
 // Copyright[2023] <Vinicius de Camargo Bandeira>
-#include "rainhas.hpp"
+#include "/rainhas.hpp"
 #include <vector>
 #include <algorithm>
 #include <fstream>

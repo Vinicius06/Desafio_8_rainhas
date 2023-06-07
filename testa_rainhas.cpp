@@ -1,8 +1,8 @@
 // Copyright[2023] <Vinicius de Camargo Bandeira>
-#define CATCH_CONFIG_MAIN
-#include "catch.hpp"
-#include "rainhas.hpp"
 #include <vector>
+#include "/rainhas.hpp"
+#include "/catch.hpp"
+#define CATCH_CONFIG_MAIN
 
 TEST_CASE("Teste de solução válida das 8 damas") {
     std::vector<int> tab = {
@@ -349,10 +349,10 @@ TEST_CASE("11° Teste de validação do tab inválido: solução inválida") {
     REQUIRE(checar_solucao(tab) == 0);
 }
 
-TEST_CASE("Decimo segundo Teste de validação do tab inválido: solução inválida") {
+TEST_CASE("12° Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -364,10 +364,10 @@ TEST_CASE("Decimo segundo Teste de validação do tab inválido: solução invá
     REQUIRE(checar_solucao(tab) == 0);
 }
 
-TEST_CASE("Decimo terceiro Teste de validação do tab inválido: solução inválida") {
+TEST_CASE("13° Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
@@ -379,10 +379,10 @@ TEST_CASE("Decimo terceiro Teste de validação do tab inválido: solução inv�
     REQUIRE(checar_solucao(tab) == 0);
 }
 
-TEST_CASE("Decimo quarto Teste de validação do tab inválido: solução inválida") {
+TEST_CASE("14° Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
@@ -394,10 +394,10 @@ TEST_CASE("Decimo quarto Teste de validação do tab inválido: solução invál
     REQUIRE(checar_solucao(tab) == 0);
 }
 
-TEST_CASE("Decimo quinto Teste de validação do tab inválido: solução inválida") {
+TEST_CASE("15° Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 1, 0, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
@@ -409,10 +409,10 @@ TEST_CASE("Decimo quinto Teste de validação do tab inválido: solução invál
     REQUIRE(checar_solucao(tab) == 0);
 }
 
-TEST_CASE("Decimo sexto Teste de validação do tab inválido: solução inválida") {
+TEST_CASE("16° Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 1, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 1, 0, 
+        0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
