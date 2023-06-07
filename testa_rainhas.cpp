@@ -202,7 +202,7 @@ TEST_CASE("Teste de validação do tab inválido: solução inválida") {
 TEST_CASE("Segundo Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         1, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -217,7 +217,7 @@ TEST_CASE("Segundo Teste de validação do tab inválido: solução inválida") 
 TEST_CASE("Terceiro Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         1, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -232,7 +232,7 @@ TEST_CASE("Terceiro Teste de validação do tab inválido: solução inválida")
 TEST_CASE("Quarto Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 1, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -247,7 +247,7 @@ TEST_CASE("Quarto Teste de validação do tab inválido: solução inválida") {
 TEST_CASE("Quinto Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 1, 0, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -262,7 +262,7 @@ TEST_CASE("Quinto Teste de validação do tab inválido: solução inválida") {
 TEST_CASE("Sexto Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 1, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -277,7 +277,7 @@ TEST_CASE("Sexto Teste de validação do tab inválido: solução inválida") {
 TEST_CASE("Setimo Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -292,7 +292,7 @@ TEST_CASE("Setimo Teste de validação do tab inválido: solução inválida") {
 TEST_CASE("Oitavo Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 1, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -307,7 +307,7 @@ TEST_CASE("Oitavo Teste de validação do tab inválido: solução inválida") {
 TEST_CASE("Nono Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         1, 0, 0, 0, 0, 0, 0, 0,
@@ -322,7 +322,7 @@ TEST_CASE("Nono Teste de validação do tab inválido: solução inválida") {
 TEST_CASE("Decimo Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -334,10 +334,10 @@ TEST_CASE("Decimo Teste de validação do tab inválido: solução inválida") {
     REQUIRE(checar_solucao(tab) == 0);
 }
 
-TEST_CASE("Decimo primeiro Teste de validação do tab inválido: solução inválida") {
+TEST_CASE("11° Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
