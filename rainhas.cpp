@@ -4,23 +4,23 @@
 #include <algorithm>
 #include <fstream>
 
-bool posicao(const std::vector<std::vector<int>>& tab, int linha, int coluna) {
+bool posicao(const std::vector<std::vector<int>>& tab, int li, int co) {
     int n = tab.size();
 
-    // Verifica se há uma rainha na mesma colunauna
-    for (int i = 0; i < linha; i++) {
-        if (tab[i][coluna] == 1)
+    // Verifica se há uma rainha na mesma couna
+    for (int i = 0; i < li; i++) {
+        if (tab[i][co] == 1)
             return false;
     }
 
     // Verifica se há uma rainha na diagonal superior esquerda
-    for (int i = linha-1, j = coluna-1; i >= 0 && j >= 0; i--, j--) {
+    for (int i = li-1, j = co-1; i >= 0 && j >= 0; i--, j--) {
         if (tab[i][j] == 1)
             return false;
     }
 
     // Verifica se há uma rainha na diagonal superior direita
-    for (int i = linha-1, j = coluna+1; i >= 0 && j < n; i--, j++) {
+    for (int i = li-1, j = co+1; i >= 0 && j < n; i--, j++) {
         if (tab[i][j] == 1)
             return false;
     }
@@ -33,17 +33,16 @@ void ataques_rainhas(const std::vector<std::vector<int>>& tab) {
     int n = tab.size();
 
     // Percorre todas as posições do tab
-    for (int linha = 0; linha < n; linha++) {
-        for (int coluna = 0; coluna < n; coluna++) {
-            // Verifica se há uma rainha na posição (linha, coluna)
-            if (tab[linha][coluna] == 1) {
+    for (int li = 0; li < n; li++) {
+        for (int co = 0; co < n; co++) {
+            // Verifica se há uma rainha na posição (li, co)
+            if (tab[li][co] == 1) {
                 // Verifica se ela se ataca com outras rainhas
                 for (int i = 0; i < n; i++) {
                     for (int j = 0; j < n; j++) {
-                        if (i != linha && j != coluna) {
+                        if (i != li && j != co) {
                             if (tab[i][j] == 1 && !posicao(tab, i, j)) {
-                                // Escreve as posições das rainhas que se atacam no arquivo
-                                outputFile << "(" << linha << "," << coluna << ") ataca (" << i << "," << j << ")\n";
+                                outputFile<<"("<<li<<","<<co<<")at("<<i<<","<<j<<")\n";
                             }
                         }
                     }
@@ -65,24 +64,24 @@ int checar_solucao(const std::vector<int>& tab) {
 
     // Preenche o tab com base no vetor tab
     for (int i = 0; i < n; i++) {
-        int linha = i / 8;
-        int coluna = i % 8;
-        xadrez[linha][coluna] = tab[i];
+        int li = i / 8;
+        int co = i % 8;
+        xadrez[li][co] = tab[i];
     }
 
     // Verifica se há mais de 8 rainhas
     int numQueens = 0;
-    for ( const auto& linha : xadrez) {
-        numQueens += std::count(linha.begin(), linha.end(), 1);
+    for (const auto& li : xadrez) {
+        numQueens += std::count(li.begin(), li.end(), 1);
         if (numQueens > 8) {
             return -1;
         }
     }
 
     // Verifica se as rainhas estão em posições seguras
-    for (int linha = 0; linha < 8; linha++) {
-        for (int coluna = 0; coluna < 8; coluna++) {
-            if (xadrez[linha][coluna] == 1 && !posicao(xadrez, linha, coluna)) {
+    for (int li = 0; li < 8; li++) {
+        for (int co = 0; co < 8; co++) {
+            if (xadrez[li][co] == 1 && !posicao(xadrez, li, co)) {
                 // Rainhas se atacam, escreve no arquivo de saída
                 ataques_rainhas(xadrez);
                 return 0;
