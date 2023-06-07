@@ -5,6 +5,6 @@
 #include <vector>
 
 
-int checar_solucao(const std::vector<int>& tabuleiro);
+int checar_solucao(const std::vector<int>& tab);
 
 #endif  // RAINHAS_HPP
