@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação: Referência do Arquivo desafio_8_rainhas/rainhas.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9833a0408c914adc278e66ba972e342e.html">desafio_8_rainhas</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo rainhas.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Este arquivo contém a declaração das funções relacionadas ao problema das rainhas. O problema das rainhas envolve encontrar uma solução para posicionar N rainhas em um tabuleiro de xadrez NxN, de forma que nenhuma rainha ameace outra. Este arquivo fornece uma função para verificar a validade de uma solução.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+</div>
+<p><a href="rainhas_8hpp_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a9841e016be3fcabcedbb794757be796f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rainhas_8hpp.html#a9841e016be3fcabcedbb794757be796f">checar_solucao</a> (const std::vector&lt; int &gt; &amp;tab)</td></tr>
+<tr class="memdesc:a9841e016be3fcabcedbb794757be796f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica a validade de uma solução para o problema das rainhas em um tabuleiro de xadrez. Esta função verifica se a solução fornecida é válida para posicionar as rainhas em um tabuleiro de xadrez. Ela recebe um vetor que representa a solução, onde cada elemento representa a posição da coluna da rainha na respectiva linha. A função verifica se nenhuma rainha está na mesma linha, coluna ou diagonal, ameaçando-se mutuamente.  <br /></td></tr>
+<tr class="separator:a9841e016be3fcabcedbb794757be796f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Este arquivo contém a declaração das funções relacionadas ao problema das rainhas. O problema das rainhas envolve encontrar uma solução para posicionar N rainhas em um tabuleiro de xadrez NxN, de forma que nenhuma rainha ameace outra. Este arquivo fornece uma função para verificar a validade de uma solução. </p>
+</div><h2 class="groupheader">Funções</h2>
+<a id="a9841e016be3fcabcedbb794757be796f" name="a9841e016be3fcabcedbb794757be796f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9841e016be3fcabcedbb794757be796f">&#9670;&#160;</a></span>checar_solucao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int checar_solucao </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tab</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica a validade de uma solução para o problema das rainhas em um tabuleiro de xadrez. Esta função verifica se a solução fornecida é válida para posicionar as rainhas em um tabuleiro de xadrez. Ela recebe um vetor que representa a solução, onde cada elemento representa a posição da coluna da rainha na respectiva linha. A função verifica se nenhuma rainha está na mesma linha, coluna ou diagonal, ameaçando-se mutuamente. </p>
+<p>Assertiva de entrada:</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>O vetor que representa a solução, onde tab[i] representa a posição da coluna da rainha css Copy code na linha i. Assertiva de saida:</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>0 se a solução é válida, -1 caso contrário. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                              {</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keywordtype">int</span> n = tab.size();</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (n != 64) {</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    std::vector&lt;std::vector&lt;int&gt;&gt; xadrez(8, std::vector&lt;int&gt;(8, 0));</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="comment">// Preenche o tab com base no vetor tab</span></div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordtype">int</span> li = i / 8;</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordtype">int</span> co = i % 8;</div>
+<div class="line"><span class="lineno">   75</span>        xadrez[li][co] = tab[i];</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// Verifica se há mais de 8 rainhas</span></div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordtype">int</span> numQueens = 0;</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; li : xadrez) {</div>
+<div class="line"><span class="lineno">   81</span>        numQueens += std::count(li.begin(), li.end(), 1);</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">if</span> (numQueens &gt; 8) {</div>
+<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   84</span>        }</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="comment">// Verifica se as rainhas estão em posições seguras</span></div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> li = 0; li &lt; 8; li++) {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> co = 0; co &lt; 8; co++) {</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">if</span> (xadrez[li][co] == 1 &amp;&amp; !<a class="code hl_function" href="rainhas_8cpp.html#a8cf5393972a2d0ffa56f2f93fe20d781">posicao</a>(xadrez, li, co)) {</div>
+<div class="line"><span class="lineno">   91</span>                <span class="comment">// Rainhas se atacam, escreve no arquivo de saída</span></div>
+<div class="line"><span class="lineno">   92</span>                <a class="code hl_function" href="rainhas_8cpp.html#a26015d0353b4aafc0a0d5ff2998b4e14">ataques_rainhas</a>(xadrez);</div>
+<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   94</span>            }</div>
+<div class="line"><span class="lineno">   95</span>        }</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">   99</span>}</div>
+<div class="ttc" id="arainhas_8cpp_html_a26015d0353b4aafc0a0d5ff2998b4e14"><div class="ttname"><a href="rainhas_8cpp.html#a26015d0353b4aafc0a0d5ff2998b4e14">ataques_rainhas</a></div><div class="ttdeci">void ataques_rainhas(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;tab)</div><div class="ttdef"><b>Definição</b> rainhas.cpp:37</div></div>
+<div class="ttc" id="arainhas_8cpp_html_a8cf5393972a2d0ffa56f2f93fe20d781"><div class="ttname"><a href="rainhas_8cpp.html#a8cf5393972a2d0ffa56f2f93fe20d781">posicao</a></div><div class="ttdeci">bool posicao(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;tab, int li, int co)</div><div class="ttdef"><b>Definição</b> rainhas.cpp:7</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
