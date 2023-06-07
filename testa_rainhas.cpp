@@ -1,9 +1,15 @@
 // Copyright[2023] <Vinicius de Camargo Bandeira>
 #include <vector>
-#include "/rainhas.hpp"
-#include "/catch.hpp"
+#include "./rainhas.hpp"
+#include "./catch.hpp"
 #define CATCH_CONFIG_MAIN
 
+/**
+ * 
+ * testes
+ * @param tab
+ * 
+*/
 TEST_CASE("Teste de solução válida das 8 damas") {
     std::vector<int> tab = {
         1, 0, 0, 0, 0, 0, 0, 0,
@@ -18,6 +24,20 @@ TEST_CASE("Teste de solução válida das 8 damas") {
 
     REQUIRE(checar_solucao(tab) == 1);
 }
+/**
+ * 
+ * 
+ * return 1
+ * 
+ */
+
+
+/**
+ * 
+ * testes
+ * @param tab
+ * 
+*/
 
 TEST_CASE("Segundo Teste de solução válida das 8 damas") {
     std::vector<int> tab = {
@@ -34,6 +54,15 @@ TEST_CASE("Segundo Teste de solução válida das 8 damas") {
     REQUIRE(checar_solucao(tab) == 1);
 }
 
+
+/**
+ * 
+ * testes
+ * @param tab
+ * 
+*/
+
+
 TEST_CASE("Tercerio Teste de solução válida das 8 damas") {
     std::vector<int> tab = {
         0, 0, 0, 0, 1, 0, 0, 0,
@@ -48,6 +77,13 @@ TEST_CASE("Tercerio Teste de solução válida das 8 damas") {
 
     REQUIRE(checar_solucao(tab) == 1);
 }
+
+/**
+ * 
+ * testes
+ * @param tab
+ * 
+*/
 
 TEST_CASE("Quarto Teste de solução válida das 8 damas") {
     std::vector<int> tab = {

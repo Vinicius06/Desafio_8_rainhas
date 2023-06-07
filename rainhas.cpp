@@ -1,12 +1,18 @@
 // Copyright[2023] <Vinicius de Camargo Bandeira>
-#include "/rainhas.hpp"
+#include "./rainhas.hpp"
 #include <vector>
 #include <algorithm>
 #include <fstream>
 
 bool posicao(const std::vector<std::vector<int>>& tab, int li, int co) {
     int n = tab.size();
-
+    /**
+     * 
+     * @param tabuleiro
+     * @param linhas
+     * @param colunas
+     * 
+    */
     // Verifica se há uma rainha na mesma couna
     for (int i = 0; i < li; i++) {
         if (tab[i][co] == 1)
