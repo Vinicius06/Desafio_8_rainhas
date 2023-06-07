@@ -42,7 +42,7 @@ void ataques_rainhas(const std::vector<std::vector<int>>& tab) {
                     for (int j = 0; j < n; j++) {
                         if (i != li && j != co) {
                             if (tab[i][j] == 1 && !posicao(tab, i, j)) {
-                                outputFile<<"("<<li<<","<<co<<")at("<<i<<","<<j<<")\n";
+outputFile << "(" << li << "," << co << ")at(" << i << "," << j <<")\n";
                             }
                         }
                     }
