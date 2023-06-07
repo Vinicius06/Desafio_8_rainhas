@@ -1,8 +1,8 @@
 // Copyright[2023] <Vinicius de Camargo Bandeira>
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include <vector>
 #include "rainhas.hpp"
+#include <vector>
 
 TEST_CASE("Teste de solução válida das 8 damas") {
     std::vector<int> tab = {
@@ -187,7 +187,7 @@ TEST_CASE("Decimo segundo Teste de solução válida das 8 damas") {
 TEST_CASE("Teste de validação do tab inválido: solução inválida") {
     std::vector<int> tab = {
         1, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
